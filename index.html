@@ -1,12 +1,186 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Oeuvre</title>
-</head>
-<body>
-<script type="text/javascript">
-  // similar behavior as an HTTP redirect
-  window.location.replace('http://www.oeuvre.io');
-</script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> Oeuvre </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <link href="./assets/css/main.css" rel="stylesheet">
+  	<link rel='stylesheet' id='prettyphoto-css'  href="./assets/css/prettyPhoto.css" type='text/css' media='all'>
+    	
+    	<!-- Google Fonts call. Font Used Open Sans & Poly -->
+  	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  	<link href='http://fonts.googleapis.com/css?family=Poly' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="http://cloud.typography.com/7258052/746364/css/fonts.css" />
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>  
+	<style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="./assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+    <!-- JQuery -->
+    <!-- <script type="text/javascript" src="assets/js/jquery.js"></script> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.16.min.js"></script>
+    
+  	<!-- prettyPhoto Initialization -->
+	<script type="text/javascript" charset="utf-8">
+	  $(document).ready(function(){
+	    $("a[rel^='prettyPhoto']").prettyPhoto();
+	  });
+	</script>
+  
+  
+  </head>
+
+  <body>
+  
+    <!-- Navigation Bar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="brand mainTitle"><a class="mainTitleLink2" href="#/home">OEUVRE</a></div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Header Image and Logo -->
+	<div id="headerwrap">
+  		<header class="clearfix">
+  		 	<div class="span12">
+  				<h2> The Future of Art Investing and Fundraising </h2>
+          <h4 class="subTitle">Co-invest in art with leading art dealers. </h4>
+          <h4 class="subTitle secondSub"> Donate to help art museums finance new commissioned artwork.</h4>
+        </div>
+  		</header>
+      <div class="mainInfoLinks span12">
+        <button type="button" id="invest-button" class="btn btn-lg btn-artprty btn-mainInfo">
+            REQUEST INVITE
+        </button>
+      </div>
+      <div class="request-form-div span12" style="display: none">
+        <form class="request-form">
+          <div class="span12">
+            <div class="row">
+              <div class="span5">
+                <p class="pull-right invite-label"> First Name </p>
+              </div>
+              <div class="span7">
+                <input class="fname pull-left" type="text" name="fname">
+              </div>
+            </div>
+          </div>
+          <div class="span12">
+            <div class="row">
+              <div class="span5">
+                <p class="pull-right invite-label"> Last Name </p>
+              </div>
+              <div class="span7">
+                <input class="lname pull-left" type="text" name="lname">
+              </div>
+            </div>
+          </div>
+          <div class="span12">
+            <div class="row">
+              <div class="span5">
+                <p class="pull-right invite-label"> Email </p>
+              </div>
+              <div class="span7">
+                <input class="email pull-left" type="email" name="email" autocomplete="off">
+              </div>
+            </div>
+            <input class="btn btn-lg btn-artprty btn-mainInfo request-submit" type="submit">
+          </div>
+        </form>
+      </div>
+      <div class="invite-confirm-div span12" style="display: none">
+        <p class="invite-confirm"> Thank you for your interest. We'll be in touch soon. </p> 
+      </div>
+	</div>
+
+  <div class="container" style="margin-top:50px;">
+    <div class="howWorksTextHolder">
+        <div class="howWorksTitle magic">THE MAGIC OF OEUVRE </div>
+        <div class="howWorksText magicText">
+            Oeuvre enables art investors to collectively co-invest in art acquisitions sourced, acquired, managed and resold by leading art dealers and art enthusiasts to help art museums finance new commissioned artwork.</div>
+    </div>
+  </div>
+
+  <div style="background-color:#34bdb9;padding-top:40px;margin-bottom:30px;">
+    <div class="container">
+        <div class="row investment-process-module">
+            <div class="home-investment-process-title">
+                <h2 class="howWorksTitle simple"> The Investment Process Simplified </h2>
+            </div>
+            <div class="span12">
+              <div class="row">
+                <div class="span1"></div>
+                <div class="span2 home-process-module dealers-source">
+                    <div class="numberCircle">1</div>
+                    <p class="process-steps"> Art dealers source art to acquire </p>
+                </div>
+                <div class="span2 home-process-module dealers-offer">
+                    <div class="numberCircle">2</div>
+                    <p class="process-steps"> Art dealers offer co-investment opportunity in pieces of art </p>
+                </div>
+                <div class="span2 home-process-module investors-invest">
+                    <div class="numberCircle">3</div>
+                    <p class="process-steps"> Investors co-invest with art dealers and other investors </p>
+                </div>
+                <div class="span2 home-process-module dealers-manage">
+                    <div class="numberCircle">4</div>
+                    <p class="process-steps"> Art dealers acquire, manage and resell the art </p>
+                </div>
+                <div class="span2 home-process-module dealers-manage">
+                    <div class="numberCircle">5</div>
+                    <p class="process-steps"> Upon resale, proceeds proportionally distributed to co-investors </p>
+                </div>
+              </div>
+            </div>
+<!--             <div class="mainInfoLinks span12">
+              <button type="button" id="invest-button" class="btn btn-lg btn-artprty btn-mainInfo">
+                  REQUEST INVITE
+              </button>
+            </div> -->
+        </div> <!-- investment-process-module row -->
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer">
+        &copy; OEUVRE, Inc. 2014
+    </div>
+  </div>
+
+
+
+  <!-- Le javascript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="./assets/js/bootstrap.js"></script>
+	<script type="text/javascript" src="./assets/js/jquery.prettyPhoto.js"></script>
+  <script type="text/javascript" src="./assets/js/theme.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script>
+  Parse.initialize("WkMFpIGuB9xvuhlwUS8ib1XS6OeZ6erZceUaTcwy", "oMUymZTsCt1GzXBICCWtkpMuFNwnwzJpSW70NTm0");
+  </script>
+  </body>
 </html>
